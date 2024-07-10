@@ -1,16 +1,12 @@
-
 # WhatsApp Product Dissection and Relational Database Schema
 
 ## Project Overview
-
 This project analyzes WhatsApp, focusing on its features, real-world problem-solving capabilities, and a relational database schema description.
 
-### Company Overview
-
+## Company Overview
 WhatsApp, founded in 2009 and acquired by Facebook in 2014, is a leading messaging application with over 2 billion users globally.
 
-### Product Dissection
-
+## Product Dissection
 WhatsApp solves various real-world problems through its features:
 
 - **Instant Communication**: Enables real-time messaging and calls.
@@ -18,15 +14,13 @@ WhatsApp solves various real-world problems through its features:
 - **End-to-End Encryption**: Ensures message privacy.
 - **Business Communication**: Facilitates efficient customer interactions.
 
-### Case Study: Real-World Problems and Solutions
+## Case Study: Real-World Problems and Solutions
+- **Emergency Situations**: Instant messaging aids in timely communication.
+- **Costly International Communication**: Provides affordable global communication.
+- **Privacy and Security**: Implements end-to-end encryption.
+- **Business Efficiency**: WhatsApp Business enhances customer service.
 
-1. **Emergency Situations**: Instant messaging aids in timely communication.
-2. **Costly International Communication**: Provides affordable global communication.
-3. **Privacy and Security**: Implements end-to-end encryption.
-4. **Business Efficiency**: WhatsApp Business enhances customer service.
-
-### Top Features of WhatsApp
-
+## Top Features of WhatsApp
 - Instant Messaging
 - Voice and Video Calls
 - End-to-End Encryption
@@ -38,23 +32,20 @@ WhatsApp solves various real-world problems through its features:
 ### Schema Description
 
 #### User Schema
-
-```plaintext
 - user_id (Primary Key)
 - phone_number
 - display_name
 - status_message
 - profile_picture
 
-#### **Chat Schema**
+#### Chat Schema
 - chat_id (Primary Key)
 - chat_type
 - participants (Many-to-Many)
 - last_message
 - unread_count
 
-
-**#### Message Schema**
+#### Message Schema
 - message_id (Primary Key)
 - chat_id (Foreign Key)
 - sender_id (Foreign Key)
@@ -62,14 +53,14 @@ WhatsApp solves various real-world problems through its features:
 - timestamp
 - is_read
 
-**Attachment Schema**
+#### Attachment Schema
 - attachment_id (Primary Key)
 - message_id (Foreign Key)
 - attachment_type
 
-**Relationships**
-**User-Chat**: One-to-Many
-**Chat-Message**: One-to-Many
-**User-Message**: One-to-Many
-**Chat-Participant**: Many-to-Many
-**Message-Attachment**: One-to-Many
+### Relationships
+- **User-Chat**: One-to-Many
+- **Chat-Message**: One-to-Many
+- **User-Message**: One-to-Many
+- **Chat-Participant**: Many-to-Many
+- **Message-Attachment**: One-to-Many
