@@ -46,7 +46,7 @@ WhatsApp solves various real-world problems through its features:
 - status_message
 - profile_picture
 
-**####** **Chat Schema**
+#### **Chat Schema**
 - chat_id (Primary Key)
 - chat_type
 - participants (Many-to-Many)
